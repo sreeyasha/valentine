@@ -1,0 +1,675 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+}
+body{
+    margin: 0%;
+    font-size: 17px;
+    padding: 0%;
+    
+
+  background: var(--bg);
+  color: var(--ink);
+}
+
+/**********PAGE-1************/
+.homepage{
+    
+    padding: 8rem 5rem;
+    height: 32.4rem;
+    background-image: url(images/back.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: left;
+    line-height: 399%;
+    
+    
+}
+
+.homepage h2{
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: normal;
+    margin-bottom: 0;
+    font-size: 5rem;
+    color: #f7cfe0da;
+    margin-top: 4%;
+}
+.homepage h3{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 3.625rem;
+    font-weight: normal;
+    line-height: 86%;
+    
+      
+}
+.homepage h4{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 3.625rem;
+    font-weight: normal;
+    line-height: 86%;
+}
+
+/* ***********NAVIGATION BAR*************** */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#040404;
+    position:sticky;   
+    padding: 0.5rem 2rem;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    
+}
+
+.logo{
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 2.25rem;
+    
+}
+
+nav .link a{
+    font-family: 'Nunito Sans', sans-serif;
+    text-decoration: none;
+    color: white; 
+    margin: 1rem;
+    cursor: pointer;
+}
+nav .link a:hover{
+    color: var(--accent);
+}
+
+/* *******************PAGE-2********************** */
+.page2{
+    margin-top: 0%;
+    padding: 0;
+    
+}
+
+/* **********FLEX-CONTAINER */
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 16px;          /* nice spacing */
+    padding: 60px 6%;   /* controls space above/below gallery */
+    height: auto;       /* IMPORTANT: removes forced tall section */
+    min-height: 0;      /* prevents weird overflow */
+}
+
+/* Gallery cards */
+.box{
+    width: 220px;        /* consistent card size */
+    height: 320px;       /* consistent card height */
+    margin: 0;           /* we’re using gap now */
+    border-radius: 14px; /* optional but looks nicer */
+    box-shadow: 0 0 50px #1f1f1f69;
+    transition: 0.25s ease-in-out;
+}
+
+.box:hover{
+    transform: scale(1.06);
+    opacity: 0.97;
+}
+
+/* ***************CONTAINER BOXES***************** */
+#box-1{
+    background-image: url(images/art1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+#box-2{
+    background-image: url(images/art2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#box-3{
+    background-image: url(images/art3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#box-4{
+    background-image: url(images/art4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#box-5{
+    background-image: url(images/art5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#box-6{
+    background-image: url(images/art6.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#box-7{
+    background-image: url(images/art7.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#box-8{
+    background-image: url(images/art8.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#box-9{
+    background-image: url(images/art9.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#box-10{
+    background-image: url(images/art10.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#box-11{
+    background-image: url(images/art11.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#box-12{
+    background-image: url(images/art12.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* *******************PAGE-3-CONTACT US PAGE********************* */
+
+.page3{
+    height: auto;          /* IMPORTANT */
+    min-height: 0;
+    padding: 70px 0 90px;  /* controls spacing above/below */
+    margin: 0;
+}
+
+
+/* ************PAGE-3 TITLE TEXT***************** */
+.page3 h1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 3rem;
+    font-weight: bolder;
+    line-height: 1.1;
+    text-align: center;
+    margin: 0 0 32px 0;   /* less “floaty” */
+    color: #8a1c4a !IMPORTANT;
+}
+
+/* *****************CONTACT IS BOXES************** */
+.contact-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: center;
+    gap: 24px;
+}
+
+.contact-item{
+    min-height: 240px;
+    background-color: var(--soft);
+    position: relative;
+    flex: 1 1 260px;     /* responsive cards */
+    max-width: 320px;
+    margin: 0;           /* gap handles spacing */
+    text-align: center;
+    border-radius: 16px;
+    padding: 18px 16px 22px;
+}
+
+
+/* *****************CHAT BOX***************** */
+.chatbox{
+    border: 2px black solid;
+    background-color: white;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+    margin-top: 15%;
+    display: inline-block;
+    padding: 15px 35px;
+    min-width: 200px;
+    cursor: pointer;
+    
+}
+.chatbox:hover{
+    background-color: black;
+    color: white;
+}
+
+/* *************IMAGES ON CONTACT BOXES**************** */
+.cimg-1{
+    background-image: url(images/chatbox.png);
+    height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: -24.5%;
+    margin-bottom: 0.5%;
+    
+}
+.cimg-2{
+    background-image: url(images/mailbox.png);
+    height: 55px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: -7.5%;
+    margin-bottom: 21.5%;
+    
+}
+.cimg-3{
+    background-image: url(images/twitter.png);
+    height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: -12.5%;
+    margin-bottom: 16.5%;
+    
+}
+
+/* ******************CHAT BOX***************** */
+.chatboxall{
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+
+}
+
+/* *************FOOTER****************** */
+footer{
+    background-color:black;
+    text-decoration: none;
+    height: 10%;
+    padding: 2.0%;
+    text-align: center;
+    justify-content: center;
+}
+
+.links{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.links a{
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.links a img{
+  width: 400px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 10px rgba(0,0,0,0.14));
+  transition: 0.25s;
+}
+
+.links a span{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 1.75rem;
+  color: var(--ink);
+  letter-spacing: 0.3px;
+}
+
+.links a:hover img{
+  transform: scale(1.08) rotate(-2deg);
+}
+
+.links a:active img{
+  transform: scale(0.98);
+}
+
+.links{
+  gap: 40px;
+}
+
+
+/* Coupons section */
+.page5{
+  background: var(--bg);
+  padding: 54px 0 64px 0;
+  text-align: center;
+}
+
+.page5 h1{
+  font-family: 'Alfa Slab One', cursive;
+  font-weight: normal;
+  font-size: 3rem;
+  margin: 0 0 16px 0;
+  color: var(--ink);
+}
+
+.subhead{
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  opacity: 0.85;
+}
+
+.coupon-tip{
+  font-family: 'Nunito', sans-serif;
+  margin-top: 18px;
+  opacity: 0.85;
+}
+
+/* *****************CREDIT****************** */
+footer h2{
+    color: gray;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    float: right;
+    padding: 0% 1% 0.5% 1%;
+    margin: 0%;
+}
+
+/* *******************RESPNOSIVENESS************* */
+@media screen and (max-width:415px)
+{
+    /* *********PAGE-1********** */
+        .homepage h2 {
+            font-size: 3.5rem;
+        }
+        .homepage h3 {
+            font-size: 2.5rem;
+        }
+        .homepage h4 {
+            font-size: 2.5rem;
+        }
+        .homepage{
+            padding: 7rem 2rem;
+            height: 27.5rem;
+            margin-bottom: 19%;           
+        }
+
+    /* ************NAVIGATION BAR********* */
+        .logo{
+            font-size: 308%;
+            padding: 1% 0% 10% 0%;
+            margin-left: -14px;
+        }
+        
+        nav{
+            flex-direction: column;
+            padding: 0.9rem;
+            text-align: center;
+            margin-top: -19%;
+            padding-top: 7%;
+            padding-bottom: 8.6%;
+            position: relative;
+        }
+        nav .link a{
+            font-size: 20px;
+            padding-left: -5%;
+        }
+        
+    /* **********PAGE-2 FLEX-ITEM*********** */
+        .box{
+            width: 25%;
+            height: 40%;
+        }
+
+        button{
+            margin: 195% 3% 2% 5%;
+        }
+
+    /* **************PAGE-3***************** */
+        .contact-item{
+            margin: 8% 1% 1% 1%;
+        }
+
+    /* *************FOOTER************* */
+        footer{
+            margin-top: 105%;
+        }
+
+        footer h2{
+            margin-top: 4%;
+            float: none;
+        }
+
+
+
+/* BUILD & DESIGNED BY LOUIS BARSIWAL  */
+
+
+
+
+
+}
+
+
+/* ===============================
+   Couple gift customizations
+   =============================== */
+
+.hero-inner{ max-width: 900px; }
+
+.hero-subtitle{
+  font-family: 'Nunito', sans-serif;
+  color: rgba(255,255,255,0.9);
+  margin-top: 14px;
+  font-size: 1.05rem;
+  line-height: 1.35;
+  max-width: 520px;
+}
+
+.hero-cta{
+  margin-top: 18px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.primary-cta, .secondary-cta{
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 14px;
+  border-radius: 10px;
+  letter-spacing: 0.5px;
+}
+
+.primary-cta:hover, .secondary-cta:hover{
+  opacity: 0.9;
+}
+
+.section-title{
+  text-align: center;
+  padding: 48px 16px 10px 16px;
+}
+
+.section-title h1{
+  font-family: 'Alfa Slab One', cursive;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+.section-title p{
+  font-family: 'Nunito', sans-serif;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+.section-title.light h1,
+.section-title.light p{
+  color: white;
+}
+
+.page2{ padding-bottom: 36px; }
+
+/* Override the original container + boxes to behave like a real gallery grid */
+/* Gallery: 3 per row */
+.container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;              /* BIGGER spacing between images */
+  padding: 40px 8%;
+  max-width: 1400px;      /* allow gallery to stretch wider */
+  margin: 0 auto;
+}
+
+
+.box{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  width: 100%;          /* grid controls width */
+  height: 360px;
+  border-radius: 18px;
+  overflow: hidden;
+  text-decoration: none;
+  margin: 0;            /* grid gap handles spacing */
+}
+
+/* Responsive */
+@media (max-width: 900px){
+  .container{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 560px){
+  .container{ grid-template-columns: 1fr; }
+}
+
+
+.box::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.65), rgba(0,0,0,0.0) 55%);
+  opacity: 1;
+}
+
+.caption-title, .caption-sub{
+  position: relative;
+  z-index: 1;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  padding: 0 16px;
+}
+
+.caption-title{
+  font-weight: 700;
+  font-size: 1.15rem;
+  margin-bottom: 6px;
+}
+
+.caption-sub{
+  font-weight: 300;
+  opacity: 0.9;
+  padding-bottom: 16px;
+}
+
+/* Notes cards: use the existing contact-item layout but make it look like note cards */
+.note{
+  font-family: 'Nunito', sans-serif;
+  padding: 0 22px 22px 22px;
+  line-height: 1.45;
+  color: rgba(255,255,255,0.92);
+}
+
+.contact-item{
+  border-radius: 18px;
+}
+
+.chatboxall{
+  margin-top: 26px;
+}
+
+/* Timeline section */
+.page4{
+  background: var(--bg-alt);
+  padding-bottom: 70px;
+}
+
+.timeline{
+  max-width: 920px;
+  margin: 18px auto 0 auto;
+  padding: 0 16px;
+}
+
+.t-item{
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 14px;
+  align-items: start;
+  margin: 18px 0;
+}
+
+.t-date{
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.5px;
+  opacity: 0.8;
+  padding-top: 10px;
+}
+
+.t-card{
+  background: white;
+  border-radius: 18px;
+  padding: 18px 18px;
+  box-shadow: 0 0 30px rgba(31,31,31,0.10);
+}
+
+.t-title{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.t-text{
+  font-family: 'Nunito', sans-serif;
+  opacity: 0.9;
+  line-height: 1.45;
+}
+
+footer{
+  padding: 26px 16px;
+}
+
+.footer-tip{
+  font-family: 'Nunito', sans-serif;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+@media (max-width: 720px){
+  .t-item{ grid-template-columns: 1fr; }
+  .t-date{ padding-top: 0; }
+}:root{
+  --ink:#1f1f1f;
+  --bg:#fff7fb;
+  --bg-alt:#fff1f7;
+  --card:#ffffff;
+  --soft:#f7cfe0;
+  --accent:#f4a3c1;   /* pale pink */
+  --accent-strong:#d94b8a; /* deeper valentine */
+  --shadow: 0 10px 22px rgba(0,0,0,0.10);
+}
+
+
